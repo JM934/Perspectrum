@@ -1,0 +1,717 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(44, 44, 44)
+}
+/*---------------NAVBAR----------------------*/
+
+	/* Navigation */
+	.navbar-custom {
+		padding-right: 5rem;
+		padding-left: 5rem;
+	}
+
+	.navbar-custom.top-nav-collapse {
+		padding-right: 5rem;
+		padding-left: 5rem;
+	}
+	/* end of navigation */
+
+	
+	/* Header */
+	.header .header-content {
+		padding-top: 14.75rem;
+		padding-bottom: 17.5rem;
+	}
+	/* end of header */
+
+
+	/* Intro */
+	.basic-1 .text-container {
+		margin-top: 1.875rem;
+		margin-right: 3rem;
+	}
+	/* end of intro */
+
+
+	/* Description */
+	.cards-1 .card {
+		max-width: 21rem;
+	}
+
+	.cards-1 div.card:nth-child(3n+2) {
+		margin-right: 2.875rem;
+		margin-left: 2.875rem;
+	}
+	/* end of description */
+
+
+	/* Services */
+	.cards-2 .card {
+		max-width: 20.875rem;
+	}
+
+	.cards-2 .card-body {
+		padding: 2.25rem 2.5rem 2.125rem 2.5rem;
+	}
+
+	.cards-2 .col-lg-12 div.card:nth-child(3n+2) {
+		margin-right: 3rem;
+		margin-left: 3rem;
+	}
+	/* end of services */
+
+
+	/* Details 1 */
+	.accordion .accordion-container {
+		max-width: 28rem;
+		margin-left: 5rem;
+	}
+	/* end of details 1 */
+
+
+	/* Details 2 */
+	.tabs .tabs-container {
+		max-width: 28rem;
+		margin-right: 5rem;
+		margin-left: auto;
+	}
+
+	.tabs #tab-2 .media-wrapper.first {
+		margin-right: 2rem;
+	}
+	/* end of details 2 */
+
+
+	/* Call Me */
+	.form-1 .text-container {
+		margin-top: 1.375rem;
+		margin-right: 1.75rem;
+		margin-left: 3rem
+	}
+
+	.form-1 form {
+		margin-left: 1.75rem;
+		margin-right: 3rem
+	}
+	/* end of call me */
+
+
+	/* Projects */
+	.filter .element-item {
+		width: 17.3125rem; /* to eliminate grid overflow problem on hard refresh */
+		height: 16.875rem;
+	}
+
+	.filter .element-item .element-item-overlay span { 
+		top: 45%;
+	}
+	/* end of projects */
+
+
+	/* Team */
+	.basic-2 .team-member {
+		width: 14.375rem;
+		margin-right: 1.375rem;
+		margin-left: 1.375rem;
+	}
+	/* end of team */
+
+
+	/* About */
+	.counter {
+		padding-bottom: 6.125rem;
+	}
+
+	.counter .image-container {
+		margin-right: 1.5rem;
+	}
+
+	.counter .text-container {
+		margin-top: 0.375rem;
+		margin-right: 2.5rem;
+		margin-left: 2rem;
+	}
+	/* end of about */
+	
+	
+	/* Contact */
+	.form-2 .text-container {
+		margin-top: 0.875rem;
+		margin-right: 1.5rem;
+	}
+
+	.form-2 form {
+		margin-left: 1.5rem;
+	}
+	/* end of contact */
+
+
+	/* Footer */
+	.footer .text-container.about {
+		margin-right: 5rem;
+	}
+	/* end of footer */
+
+
+	/* Extra Pages */
+	.ex-header h1 {
+		width: 60%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.ex-basic-2 .form-container {
+		margin-left: 1.75rem;
+	}
+	/* end of extra pages */
+
+/* end of min-width width 1200px */
+
+
+/* Min-width width 1600px */
+@media (min-width: 1600px) {
+	
+	/* Navigation */
+	.navbar-custom {
+		padding-right: 12rem;
+		padding-left: 12rem;
+	}
+
+	.navbar-custom.top-nav-collapse {
+		padding-right: 12rem;
+		padding-left: 12rem;
+	}
+	/* end of navigation */
+}
+
+/*---------------ARTICLE---------------------*/
+article.goods {
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+/*-------------HEADER-----------------*/
+header {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c2c2c;
+    background-size: cover;
+    background-image: url("../img/chmura.svg");
+    /*,url("../img/perspectrum__search__engineel.png")*/
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style-type: none;
+    margin-right: 26px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    /*border: 1px solid transparent;*/
+   /* padding: 4px;*/
+    transition: all 0.2s ease-in-out;
+    transition-timing-function: ease-in;
+}
+
+/*header nav ul li a:hover {
+    padding: 4px;
+    border: 1px solid white;
+}*/
+
+/*---------------------------------*/
+/*------------ Section--------------- */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    max-width: 100%;
+    color: aliceblue;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+article.goods section {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    flex-basis: 40%;
+    outline: 1px solid #ffffff;
+    padding: 20px 20px;
+    border: 5px solid transparent;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+article.goods section:nth-last-child(2) :first-child {
+    /* background-color: yellow; */
+    margin-right: 63px;
+}
+
+article.goods section:nth-last-child(3) :first-child {
+    /* background-color: yellow; */
+    margin-right: 10px;
+}
+
+/*------------------------------------*/
+h2.whatYouGet {
+    color: aliceblue;
+    /* line-height: 30px; */
+    margin-top: 60px;
+    font-size: 125px;
+    /* background-color: purple; */
+    text-align: center;
+}
+
+h2 {
+    margin-top: 250px;
+    margin-bottom: 100px;
+    font-size: 125px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    color: #e10287;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+section p {
+    word-spacing: 2px;
+}
+
+p.perspectrum_desc {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: 140px;
+    margin-top: -90px;
+    color: #ffffff;
+}
+
+figure>p.get_ahead {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    font-weight: 300;
+    word-spacing: 3px;
+    margin-left: 145px;
+    margin-top: -10px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+p.webDesign {
+    margin-bottom: 15px;
+    width: 80%;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+p.content {
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 80%;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+p.positioning {
+    margin-bottom: 70px;
+    margin-top: 0;
+    width: 80%;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+/*------------ Arrow --------------- */
+.arrow {
+    position: absolute;
+    top: calc(100% - 112px);
+    left: 50%;
+}
+
+.arrow span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-right: 5px solid rgb(255, 255, 255);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+/* Last Section */
+article .goods .last {
+    display: flex;
+    height: 50vh;
+    flex-basis: 100%;
+    /* background-color: chocolate; */
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+.last {
+    position: relative;
+}
+
+.last>div {
+    width: 100%;
+    position: relative;
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: center;
+    top: 90px;
+}
+
+.last>h3 {
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 10%;
+    width: 97%;
+    /* background-color: aliceblue; */
+    font-family: 'Vidaloka', sans-serif;
+    font-size: 125px;
+    text-transform: none;
+
+}
+
+.wrap_p {
+    text-align: center;
+    position: absolute;
+    bottom: -18px;
+    width: 100%;
+
+}
+
+.last div img {
+    max-width: 60%;
+}
+
+span {
+    color: #e10287;
+}
+
+h4 {
+    margin-bottom: 20px;
+}
+
+/* Media Qs */
+/* iPad Pro 1024 x 1366 */
+@media screen and (max-width: 1366px) {
+    article.goods {
+        display: block;
+        width: 80vw;
+        margin: auto;
+    }
+
+    article .goods .last {
+
+        width: 80vw;
+
+    }
+
+    .last h3 {
+        font-size: 100px;
+        text-align: center;
+    }
+
+    .last>div {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1256px) {
+    .last h3 {
+        font-size: 75px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    article.goods {
+        display: block;
+        width: 80vw;
+        /* margin: 40px; */
+    }
+
+    article .goods .last {
+        height: 30vh;
+    }
+
+    .wrap_p {
+        bottom: -25px
+    }
+
+    .last h3 {
+        font-size: 80px;
+    }
+
+    .container {
+        margin: 174px;
+    }
+
+}
+
+@media screen and (max-width: 1005px) {
+
+    .last h3 {
+        font-size: 60px;
+    }
+
+    h2.whatYouGet {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 754px) {
+    article.goods {
+        width: 100vw;
+        max-width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    article.goods section {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    article.goods .last {
+        height: auto;
+    }
+    .last h3 {
+        font-size: 50px;
+    }
+
+    h2.whatYouGet {
+        font-size: 100px;
+    }
+    .last>div {
+        justify-content: center;
+    }
+
+    .wrap_p {
+        transform: none;
+        bottom: 0px;
+    }
+    .last h3 {
+        top: 60px;
+        margin: 0;
+    }
+}
+
+/* @media screen and (max-width: 700px) {
+
+    h2 {
+        font-size: 80px;
+    }
+
+    h2.whatYouGet {
+        font-size: 80px;
+    }
+    
+
+    .menu-toggle{
+        display: block;
+    }
+    
+    nav{
+        padding-top: 0;
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+    
+        nav ul{
+         flex-direction: column;
+        }
+    
+        nav ul li{
+         margin-top: 5rem;
+    }
+    
+        nav ul li a{
+        margin: 0;
+        font-size: 2.5rem;
+    }
+    
+        .brand{
+        font-size: 5rem;
+    }
+      
+      .overlay.menu-open,
+      nav.menu-open{
+        display: flex;
+        transform: scale(1);
+        opacity: 1;
+    }
+      
+} */
+
+@media screen and (max-width: 614px) {
+
+    .perspectrum {
+        display: flex;
+        flex-direction: column;
+    }
+
+    p.perspectrum_desc {
+        margin: 0;
+    }
+
+    figure>p.get_ahead {
+        margin-left: 0;
+    }
+
+    .last h3 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    article.goods {
+        width: 100vw;
+        max-width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    article.goods section {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    article.goods .last {
+        height: auto;
+    }
+
+    .last h3 {
+        top: 60px;
+        margin: 0;
+    }
+
+    .last>div {
+        justify-content: center;
+    }
+
+    .wrap_p {
+        transform: none;
+        bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 474px) {
+    p.perspectrum_desc {
+        font-size: 50px;
+    }
+
+    p.webDesign {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    h2.whatYouGet {
+        font-size: 60px;
+    }
+
+    @media screen and (max-width: 395px) {
+        p.perspectrum_desc {
+            font-size: 30px;
+        }
+
+        figure>p.get_ahead {
+            font-size: 15px;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 60px;
+
+        }
+
+        h2.whatYouGet {
+            font-size: 40px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        p.webDesign {
+            font-size: 15px;
+            line-height: 19px;
+        }
+    }
+
+    section p {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .last>div {
+        width: 80%;
+    }
+}
+
